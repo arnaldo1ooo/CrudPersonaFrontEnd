@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EstadosService {
-  private API_SERVER = "http://localhost:8080/estados/";
+  private API_SERVER = "http://localhost:8180/estados/";
 
   constructor(private httpClient: HttpClient) { }
 

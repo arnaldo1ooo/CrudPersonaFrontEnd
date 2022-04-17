@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PersonaService {
-  private API_SERVER = "http://localhost:8080/personas/";
+  private API_SERVER = "http://localhost:8180/personas/";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -21,7 +21,7 @@ export class PersonaService {
   }
 
   public deletePersona(id):Observable<any>{
-    return this.httpClient.delete(this.API_SERVER + "delete/"+id);
+    return this.httpClient.delete(this.API_SERVER + "borrar/" + id);
   }
 
 }
